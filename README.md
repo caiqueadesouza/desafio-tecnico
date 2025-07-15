@@ -21,8 +21,9 @@ Este repositório contém o **teste técnico full-stack**, com **Laravel 5 (PHP 
 ---
 
 ## 📂 Estrutura do Projeto
-/teste-full-stack-api # Backend (Laravel)
-/teste-full-stack-web # Frontend (Angular)
+/teste-full-stack-api   # Backend (Laravel)
+
+/teste-full-stack-web   # Frontend (Angular)
 
 
 ---

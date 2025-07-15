@@ -1,4 +1,4 @@
-# 🚀 Projeto Seletiva — API Laravel 5 + Frontend Angular 17
+# 🚀 Projeto — API Laravel 5 + Frontend Angular 17
 
 Este repositório contém o **teste técnico full-stack**, com **Laravel 5 (PHP 7)** no backend e **Angular 17** no frontend.
 

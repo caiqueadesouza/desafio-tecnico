@@ -38,6 +38,14 @@ cd teste-full-stack-api
 
 # Crie o banco de dados com o nome 'testeFullStack' no seu MySQL
 
+# Renomeie o arquivo de ambiente
+mv .env.example .env
+
+# Edite o arquivo .env para configurar o banco de dados:
+# DB_DATABASE=testeFullStack
+# DB_USERNAME=seu_usuario_mysql
+# DB_PASSWORD=sua_senha_mysql
+
 # Instale as dependências
 composer install
 

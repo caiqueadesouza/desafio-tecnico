@@ -1,0 +1,29 @@
+<div class="flex items-center mb-4">
+    <p class="font-bold text-2xl">{{ errorData.title }}</p>
+    <mat-icon class="ml-2" aria-label="Information icon">info</mat-icon>
+</div>
+
+<p class="my-2 text-xl">Status: {{ errorData.status }}</p>
+
+<div class="mt-2">
+    <ul *ngIf="errorData?.error && !(errorData.error.message)">
+        <li *ngFor="let field of getKeys(errorData.error)">
+            <strong>{{ field }}:</strong>
+            <ul>
+                <li *ngFor="let msg of errorData.error[field]" role="alert">
+                    {{ msg }}
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div *ngIf="errorData?.error?.message">
+        <p role="alert">{{ errorData.error.message }}</p>
+    </div>
+</div>
+
+<div class="flex justify-end mt-3">
+    <button class="text-white bg-blue-700 text-lg px-3 py-2" [matDialogClose]="" aria-label="Close button">
+        <span>OK</span>
+    </button>
+</div>
